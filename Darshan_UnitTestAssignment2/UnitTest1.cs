@@ -60,7 +60,7 @@ namespace Darshan_UnitTestAssignment2
         {
             Rectangle r = new Rectangle(length, width);
             int result = r.GetPerimeter();
-            Assert.AreEqual(expected, result);
+            Assert.AreNotEqual(expected, result);
         }
 
         //Test case with incorrect expected result
@@ -71,7 +71,7 @@ namespace Darshan_UnitTestAssignment2
         {
             Rectangle r = new Rectangle(length, width);
             int result = r.GetArea();
-            Assert.AreEqual(expected, result);
+            Assert.AreNotEqual(expected, result);
         }
     }
 }
