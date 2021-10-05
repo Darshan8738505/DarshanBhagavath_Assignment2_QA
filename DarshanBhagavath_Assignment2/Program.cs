@@ -10,34 +10,42 @@ namespace DarshanBhagavath_Assignment2
     {
         static void Main(string[] args)
         {
-            int len = 0;
-            int wid = 0;
+            try
+            {
+                int len = 0;
+                int wid = 0;
 
-            Console.WriteLine("The Rectangle values for a default constructor : ");
+                Console.WriteLine("The Rectangle values for a default constructor : ");
 
-            Rectangle rt = new Rectangle();           
+                Rectangle rt = new Rectangle();
 
-            Console.WriteLine("Area of the Rectangle is :" + rt.GetArea());
-            Console.WriteLine("Perimeter of the Rectangle is :" + rt.GetPerimeter());
+                Console.WriteLine("Area of the Rectangle is :" + rt.GetArea());
+                Console.WriteLine("Perimeter of the Rectangle is :" + rt.GetPerimeter());
 
-            Console.WriteLine("----------------------------------------------------------------------");
+                Console.WriteLine("----------------------------------------------------------------------");
 
-            Console.Write("Enter the length of the rectangle for non-default: ");
-            len = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter the length of the rectangle for non-default: ");
+                len = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter the width of the rectangle for non-default: ");
-            wid = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter the width of the rectangle for non-default: ");
+                wid = Convert.ToInt32(Console.ReadLine());
 
-            Rectangle rt2 = new Rectangle(len, wid);
-            rt2.GetLength();
-            rt.GetWidth();
-            rt.SetLength(len);
-            rt.SetWidth(wid);
+                Rectangle rt2 = new Rectangle(len, wid);
+                rt2.GetLength();
+                rt.GetWidth();
+                rt.SetLength(len);
+                rt.SetWidth(wid);
 
-            Console.WriteLine("Area of the Rectangle for non-default is :" + rt2.GetArea());
-            Console.WriteLine("Perimeter of the Rectangle for non-default is :" + rt2.GetPerimeter());
+                Console.WriteLine("Area of the Rectangle for non-default is :" + rt2.GetArea());
+                Console.WriteLine("Perimeter of the Rectangle for non-default is :" + rt2.GetPerimeter());
 
-            Console.ReadKey();
+                Console.ReadKey();
+            }
+            catch (Exception e)
+            {
+              Console.WriteLine(e.Message);
+            }
         }
+
     }
 }
