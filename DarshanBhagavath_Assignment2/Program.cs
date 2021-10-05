@@ -41,10 +41,10 @@ namespace DarshanBhagavath_Assignment2
 
                 Console.ReadKey();
             }
-            catch (Exception e)
-            {
+             catch (Exception e)
+             {
               Console.WriteLine(e.Message);
-            }
+             }
         }
 
     }
