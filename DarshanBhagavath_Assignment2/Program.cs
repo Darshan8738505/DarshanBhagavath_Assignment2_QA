@@ -38,13 +38,14 @@ namespace DarshanBhagavath_Assignment2
 
                 Console.WriteLine("Area of the Rectangle for non-default is :" + rt2.GetArea());
                 Console.WriteLine("Perimeter of the Rectangle for non-default is :" + rt2.GetPerimeter());
-
-                Console.ReadKey();
+                               
             }
              catch (Exception e)
              {
               Console.WriteLine(e.Message);
              }
+
+            Console.ReadKey();
         }
 
     }

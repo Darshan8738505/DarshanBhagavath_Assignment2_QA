@@ -32,8 +32,15 @@ namespace DarshanBhagavath_Assignment2
 
         public int SetLength(int len)
         {
-            length = len;
-            return length;
+            if ((len >= 0) && (len <= 20))
+            {
+                length = len;
+                return length;
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException("Length is out of range");
+            }
         }
 
         public int GetWidth()
@@ -43,8 +50,16 @@ namespace DarshanBhagavath_Assignment2
 
         public int SetWidth(int wid)
         {
-            width = wid;
-            return width;
+            if ((wid >= 0) && (wid <= 20))
+            {
+                width = wid;
+                return width;
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException("Width is out of range");
+            }
+            
         }
 
         public int GetPerimeter()
